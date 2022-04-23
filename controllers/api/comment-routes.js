@@ -12,9 +12,11 @@ router.get('/', (req, res) => {
 
 // POST new comment
 router.post('/', (req, res) => {
+    console.log(req.body)
     Comment.create({
         comment_text: req.body.comment_text,
-        user_id: req.session.user_text,
+        user_id: req.body.user_id,
+        // user_id: req.session.user_id,
         post_id: req.body.post_id
     })
     .then(commentData => res.json(commentData))

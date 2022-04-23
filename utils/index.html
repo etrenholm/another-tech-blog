@@ -9,27 +9,183 @@
     </head>
 
     <header>
-        <h1><a href="/">Another Tech Blog</a></h1>
-        <nav>
-            <!-- if loggin in -->
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="logout-btn">logout</button>
-            <!-- if logged out -->
-            <a href="/login">login</a>
-        </nav>
+            <nav>
+                <!-- if loggin in -->
+                <a href="/dashboard" class="nav-item">dashboard</a>
+                <button id="logout" class="nav-item logout">logout</button>
+                <!-- if logged out -->
+                <a href="/login" class="nav-item">login</a>
+            </nav>
+
+            <h1><a href="/">Another Tech Blog</a></h1>
+            <!-- if on dashboard page -->
+            <!-- <h1><a href="/">Your Dashboard</a></h1> -->
     </header>
 
     <body>
-        <main>
-        <!-- BLOGREEL HOMEPAGE -->
+        <main class="main-section">
 
-        <!-- LOGIN/LOGOUT FORMS -->
+            <!-- single-post.handlebars -->
+            <article class="posts">
+                <div class="title">
+                    <h2>Blog Post Title</h2>
+                </div>
 
-        <!-- EDIT POST -->
+                <div class="post-content">
+                    <h4>Posted by Author on 5/8/2020</h4>
+                    <p>Aliquam efficitur justo vitae leo ultricies, et fermentum sem venenatis. Maecenas dignissim nisl leo, rhoncus ullamcorper libero auctor vel. Pellentesque semper, nunc eu varius malesuada, dui velit consectetur diam, id feugiat purus dui et nisl. Etiam elit ante, consectetur eu magna at, hendrerit fermentum dolor. Ut consequat fermentum sapien vitae dictum. Vestibulum risus massa, semper ac viverra non, ultrices ac justo. Donec malesuada arcu scelerisque, sollicitudin nisl nec, finibus enim. Sed imperdiet dictum felis nec aliquam. Proin ultrices tempus nisl, ac tincidunt libero hendrerit in. Curabitur ullamcorper convallis arcu, nec malesuada odio auctor sit amet. Praesent quis mauris nec dolor dapibus faucibus. Sed sollicitudin nibh non sapien dictum, non pellentesque augue tristique. Pellentesque magna ligula, scelerisque vitae faucibus ultrices, lacinia eleifend sem.</p>
+                </div>
+            </article>
+
+            <div class="post-comment">
+                <form class="comment-form">
+                    <label for="content">Post a comment:</label><br>
+                    <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
+                    <button type="submit" class="btn">save comment</button>
+                </form>
+
+            </div>
+
+            <!-- comments.handlebars -->
+            <div class="comments">
+
+                <div class="title">
+                    <h3>Comments</h3>
+                </div>
+
+                <section class="comment">
+                    <h4>Posted by Author on 5/8/2020</h4>
+                    <p>Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.</p>
+                </section>
+
+                <section class="comment">
+                    <h4>Posted by Author on 5/8/2020</h4>
+                    <p>Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.</p>
+                </section>
+            </div>
+
+            <!-- dashboard.handlebars -->
+            <!-- <section class="dashboard">
+                <div class="create-post">
+                    <h2>Create New Post</h2>
+
+                    <form class="new-post-form">
+                        <label for="post-title">Title:</label><br>
+                        <input type="text" id="post-title" name="post-title" /><br>
+                        <label for="content">Content:</label><br>
+                        <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
+                        <button type="submit" class="btn">create</button>
+                    </form>
+                </div>
+
+                <div class="your-posts">
+                    <h2>Your Posts</h2>
+                    <ol>
+                        <li class="your-post">
+                            Post title
+                        </li>
+                        <li class="your-post">
+                            Post title
+                        </li>
+                        <li class="your-post">
+                            Post title
+                        </li>
+                    </ol>
+                </div>
+    
+            </section> -->
+
+            <!-- edit-post.handlebars -->
+            <!-- <section>
+                <div class="edit-post">
+                    <h2>Edit Post</h2>
+
+                    <form class="edit-post-form">
+                        <label for="post-title">Title:</label><br>
+                        <input type="text" id="post-title" name="post-title" /><br>
+                        <label for="content">Content:</label><br>
+                        <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
+                        <button type="submit" class="btn">save post</button>
+                    </form>
+                </div>
+            </section> -->
+
+            <!-- login.handlebars -->
+            <!-- <section>
+                <div class="login">
+                    <h2>Log In</h2>
+
+                    <form class="login-form">
+                        <div>
+                          <label for="email-login">username:</label>
+                          <input type="text" id="email-login" />
+                        </div>
+                        <div>
+                          <label for="password-login">password:</label>
+                          <input type="password" id="password-login" />
+                        </div>
+                        <div>
+                          <button type="submit" class="btn">login</button>
+                          <button type="submit" class="btn btn-two">sign up instead</button>
+                        </div>
+                      </form>
+                </div>
+            </section> -->
+
+            <!-- signup.handlebars -->
+            <!-- <section>
+                <div class="signup">
+                <form class="signup-form">
+                    <h2>Sign Up</h2>
+                    <div>
+                      <label for="username-signup">create a username:</label>
+                      <input type="text" id="username-signup" />
+                    </div>
+                    <div>
+                      <label for="password-signup">password:</label>
+                      <input type="password" id="password-signup" />
+                    </div>
+                    <div>
+                      <button type="submit" class="btn">signup</button>
+                      <button type="submit" class="btn btn-two">log in instead</button>
+                    </div>
+                  </form>
+                </div>
+            </section> -->
+
+            <!-- homepage.handlebars -->
+            <!-- <section clas="homepage">
+            <article class="homepage-posts">
+
+                <div class="title">
+                    <h2>Blog Post Title</h2>
+                </div>
+
+                <div class="post-content">
+                    <h4>Posted by Author on 5/8/2020</h4>
+                    <p><a href="/post/{{id}}" class="comment-link">2 comments</a></p>
+                </div>
+
+            </article>
+
+            <article class="homepage-posts">
+
+                <div class="title">
+                    <h2>Blog Post Title</h2>
+                </div>
+
+                <div class="post-content">
+                    <h4>Posted by Author on 5/8/2020</h4>
+                    <p><a href="/post/{{id}}" class="comment-link">2 comments</a></p>
+                </div>
+
+            </article>
+            </section> -->
+
         </main>
     </body>
 
     <footer>
-        welcome
+        
     </footer>
 </html>
