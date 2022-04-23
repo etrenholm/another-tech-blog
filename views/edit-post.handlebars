@@ -1,0 +1,14 @@
+<section>
+    <div class="edit-post">
+        <h2>Edit Post</h2>
+
+        <form class="edit-post-form">
+            <label for="post-title">Title:</label><br>
+            <input type="text" id="post-title" name="post-title" value="{{posts.title}}"/><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="10" cols="30">{{posts.post_content}}</textarea><br>
+            <button type="submit" class="btn">save post</button>
+            <button type="submit" class="btn">delete post</button>
+        </form>
+    </div>
+</section>

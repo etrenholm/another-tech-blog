@@ -1,0 +1,20 @@
+<article class="posts">
+    <div class="title">
+        <h2>{{posts.title}}</h2>
+    </div>
+
+    <div class="post-content">
+        <h4>Posted by {{posts.user.username}} on {{posts.created_at}}</h4>
+        <p>{{posts.post_content}}</p>
+    </div>
+</article>
+
+<div class="post-comment">
+    <form class="comment-form">
+        <label for="content">Post a comment:</label><br>
+        <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
+        <button type="submit" class="btn">save comment</button>
+    </form>
+</div>
+
+{{> comments posts.comments}}

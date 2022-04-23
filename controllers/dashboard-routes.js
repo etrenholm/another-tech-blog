@@ -49,8 +49,11 @@ router.get('/', (req, res) => {
 });
 
 // GET a single post by id to edit
-router.get('/', (req, res) => {
-    Post.findByPk({
+router.get('/edit/:id', (req, res) => {
+    Post.findOne({
+        where: {
+            id: req.params.id
+        },
         attributes: [
             'id',
             'title',
