@@ -7,6 +7,9 @@ const { Post, User, Comment } = require('../models');
 // GET all posts for dashboard
 router.get('/', (req, res) => {
     Post.findAll({
+        where: {
+            user_id: req.session.user_id
+        },
         attributes: [
             'id',
             'title',
@@ -97,6 +100,13 @@ router.get('/edit/:id', (req, res) => {
     .catch((err) => {
         res.status(500).json(err)
     })
+});
+
+// GET create post page
+router.get('/create', (req, res) => {
+
+    // RENDER to create-post.handlebars
+    res.render('create-post')
 });
 
 module.exports = router;

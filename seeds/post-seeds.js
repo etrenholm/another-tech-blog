@@ -7,12 +7,12 @@ const postdata = [
     user_id: 10
   },
   {
-    title: 'Using Flexbox for Today',
+    title: 'Best Practices when Using Flexbox',
     post_content: 'Nunc aliquam orci justo, et euismod diam imperdiet id. Vestibulum sagittis, lorem sit amet feugiat accumsan, felis lacus tincidunt neque, nec volutpat lacus nibh vel nibh. Etiam varius lectus ut dolor luctus, sit amet blandit tellus gravida. Nunc pretium varius nunc nec varius. Curabitur ex velit, mollis id quam vulputate, vehicula condimentum tortor. Nulla enim ante, sodales sed imperdiet id, tincidunt non mi. Cras lobortis elit eget purus tempor, vel efficitur enim fringilla. Cras cursus id urna eu tempor. Curabitur ut velit quis sem blandit rutrum non id metus. Nulla sit amet risus eu nibh pretium sollicitudin vitae eu eros. Fusce in accumsan elit, in tristique ex. Etiam ac nunc auctor dui gravida rutrum.',
     user_id: 8
   },
   {
-    title: 'Jest and jQuery for testing',
+    title: 'Jest and jQuery for Testing',
     post_content: 'Proin faucibus magna vestibulum quam sollicitudin laoreet. Proin cursus ornare metus, non aliquam nisi pharetra id. In hac habitasse platea dictumst. Proin tortor dolor, finibus sed justo nec, egestas elementum est. Fusce a urna nulla. Aliquam erat volutpat. Cras mollis gravida arcu, quis gravida nunc porttitor ut. Ut suscipit, velit id rutrum auctor, velit mauris tincidunt diam, id convallis felis sem eu tellus. Vestibulum sit amet nulla dolor. Donec pulvinar, neque a eleifend convallis, libero nunc porta ligula, in tempus lectus sapien eget mi. Maecenas varius purus sed viverra consectetur. Phasellus ornare quis libero rhoncus ultricies. Nunc laoreet vitae lacus eu efficitur. Nunc lorem nulla, ultrices vel ex at, fringilla laoreet urna.',
     user_id: 1
   },

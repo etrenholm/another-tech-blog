@@ -13,10 +13,14 @@
 <div class="post-comment">
     <form class="comment-form">
         <label for="content">Post a comment:</label><br>
-        <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
+        <textarea id="content" name="comment-body" rows="10" cols="30"></textarea><br>
         <button type="submit" class="btn">save comment</button>
     </form>
 </div>
 {{/if}}
 
 {{> comments posts.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
