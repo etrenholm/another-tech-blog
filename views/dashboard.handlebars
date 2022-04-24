@@ -1,16 +1,6 @@
 <section class="dashboard">
     
-    <div class="create-post">
-        <h2>Create New Post</h2>
-
-        <form class="new-post-form">
-            <label for="post-title">Title:</label><br>
-            <input type="text" id="post-title" name="post-title" /><br>
-            <label for="content">Content:</label><br>
-            <textarea id="content" name="content" rows="10" cols="30"></textarea><br>
-            <button type="submit" class="btn">create</button>
-        </form>
-    </div>
+    <button type="submit" class="btn create-post-btn">+ New Post</button>
 
     {{#if posts.length}}
     <div class="your-posts">

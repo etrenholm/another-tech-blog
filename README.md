@@ -1,4 +1,4 @@
-# E-Commerce Express
+# Another Tech Blog
 
 ## Table of contents
 * [Description](#description)
@@ -11,7 +11,7 @@
 * [Credit](#credit)
 
 ## Description
-Create the back end of an e-commerce website using the latest technologies so an internet retail company can comete with other e-commerce companies.
+Create CMS-style blog site where a developer can publish articles, blog posts, thoughts, and opinions about tech.
 
 ## Installation
 Open the terminal and type the following to install
