@@ -3,13 +3,14 @@ const sequelize = require('./config/connection');
 const path = require('path');
 const routes = require('./controllers/');
 const app = express();
+const helpers = require('./utils/helpers')
 
 // connect PORT
 const PORT = process.env.PORT || 3001;
 
 // handlebars
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({ })
+const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

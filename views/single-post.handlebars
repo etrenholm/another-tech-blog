@@ -4,7 +4,7 @@
     </div>
 
     <div class="post-content">
-        <h4>Posted by {{posts.user.username}} on {{posts.created_at}}</h4>
+        <h4>Posted by {{posts.user.username}} on {{format_date posts.created_at}}</h4>
         <p>{{posts.post_content}}</p>
     </div>
 </article>
