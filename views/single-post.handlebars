@@ -9,6 +9,7 @@
     </div>
 </article>
 
+{{#if loggedIn}}
 <div class="post-comment">
     <form class="comment-form">
         <label for="content">Post a comment:</label><br>
@@ -16,5 +17,6 @@
         <button type="submit" class="btn">save comment</button>
     </form>
 </div>
+{{/if}}
 
 {{> comments posts.comments}}

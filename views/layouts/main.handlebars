@@ -12,15 +12,20 @@
         <h1><a href="/">Another Tech Blog</a></h1>
         <nav>
             <a href="/" class="nav-item">home</a>
+            {{#if loggedIn}}
             <a href="/dashboard" class="nav-item">dashboard</a>
             <button id="logout" class="nav-item logout">logout</button>
+            {{else}}
             <a href="/login" class="nav-item">login</a>
+            {{/if}}
         </nav>
     </header>
 
     <main>
       {{{ body }}}
     </main>
+
+    <script src="/javascript/logout.js"></script>
 
     </body>
 
