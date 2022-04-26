@@ -106,7 +106,9 @@ router.get('/edit/:id', (req, res) => {
 router.get('/create', (req, res) => {
 
     // RENDER to create-post.handlebars
-    res.render('create-post')
+    res.render('create-post', {
+        loggedIn: true
+    })
 });
 
 module.exports = router;
