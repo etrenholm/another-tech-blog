@@ -47,6 +47,7 @@ npm run seed
 * Handlebars
 * bcrypt
 * express-session
+* connect-session-sequelize
 
 ## References
 
