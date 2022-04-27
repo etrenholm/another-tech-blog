@@ -82,11 +82,13 @@ npm run seed
 * Made tweaks and finished README.md
 
 ## Results
-* [Heroku Link]()
+* [Heroku Link](https://desolate-reaches-38004.herokuapp.com/)
 * [GitHub Repository](https://github.com/etrenholm/another-tech-blog)
 
 ### Output Example
-![mockup]()
+![mockup](/assets/techblog-1.png)
+![mockup](/assets/techblog-2.png)
+![mockup](/assets/techblog-3.png)
 
 ## Credit
 Erica Trenholm: https://github.com/etrenholm
