@@ -46,6 +46,7 @@ npm run seed
 * Insomnia
 * Handlebars
 * bcrypt
+* express-session
 
 ## References
 
@@ -54,7 +55,7 @@ npm run seed
 * Created GitHub Repository with a unique name.
 * Pushed first commit of files into the new Repo using Git.
 * Organized folder and file directory structure.
-* Installed Express, Sequelize, MySQL, Dotenv, Handlebars, and bcrypt
+* Installed Express, Sequelize, MySQL, Dotenv, Handlebars, express-session and bcrypt
 * Imported Sequelize connection and synced database
 
 ### STEP 2. - SETUP MODELS
